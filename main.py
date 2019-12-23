@@ -11,18 +11,6 @@ while True:
     if Action == "yt":
         webbrowser.open("https://youtube.com/")
         File.truncate(0)
-    elif Action == "vm":
-        passwd = File.read().strip("\n")
-        pyautogui.moveTo(x=163, y=1065)
-        pyautogui.click(button="right")
-        pyautogui.moveTo(x=163, y=886)
-        pyautogui.click()
-        pyautogui.moveTo(x=914, y=585)
-        sleep(2)
-        pyautogui.click()
-        pyautogui.typewrite(passwd)
-        pyautogui.press("enter")
-        File.truncate(0)
     elif Action == "mc":
         MinecraftVersion = File.read().strip("\n")
         pyautogui.moveTo(x=201, y=1066)
